@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/screenTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image_editor_title"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/screenSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/image_editor_subtitle"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/preview_surface"
+            android:contentDescription="@string/selected_image"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/art_sunrise" />
+
+        <TextView
+            android:id="@+id/opacityValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            tools:text="Прозрачность: 100%" />
+
+        <SeekBar
+            android:id="@+id/opacitySeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="100" />
+
+        <TextView
+            android:id="@+id/chooseImageLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/choose_image"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <LinearLayout
+            android:id="@+id/imageChooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageOptionOne"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/thumbnail_background"
+                android:contentDescription="@string/image_one"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/art_sunrise" />
+
+            <ImageButton
+                android:id="@+id/imageOptionTwo"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/thumbnail_background"
+                android:contentDescription="@string/image_two"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/art_city" />
+
+            <ImageButton
+                android:id="@+id/imageOptionThree"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/thumbnail_background"
+                android:contentDescription="@string/image_three"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/art_balloon" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/share_image" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

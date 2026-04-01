@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyExamApplication</string>
+    <string name="image_editor_title">Редактор прозрачности изображений</string>
+    <string name="image_editor_subtitle">Выберите одно из трёх изображений, измените его прозрачность и поделитесь результатом.</string>
+    <string name="selected_image">Выбранное изображение</string>
+    <string name="opacity_value">Прозрачность: %1$d%%</string>
+    <string name="choose_image">Выберите изображение</string>
+    <string name="image_one">Изображение 1</string>
+    <string name="image_two">Изображение 2</string>
+    <string name="image_three">Изображение 3</string>
+    <string name="share_image">Share</string>
+    <string name="share_chooser_title">Поделиться изображением</string>
+    <string name="share_text">Прозрачность изображения: %1$d%%</string>
+    <string name="share_error">Не удалось подготовить изображение для отправки.</string>
+</resources>
